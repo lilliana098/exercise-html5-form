@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row firstRowBg">
+            <h1>Payment From Example</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 p-2 mt-2">
+                <div class="alert alert-danger" role="alert">
+                    Ingrese los datos para realizar el pago
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-4">
+                <label for="exampleFormControlTextarea1" class="form-label">Card #</label>
+                <input class="form-control" type="text" placeholder="Dígite su # de tarjeta" aria-label="input example">
+            </div>
+            <div class="col-sm-4">
+                <label for="exampleFormControlTextarea1" class="form-label">CVC #</label>
+                <input class="form-control" type="text" placeholder="Digite la clave de seguridad" aria-label="input example">
+            </div>
+            <div class="col-sm-4">
+                <label for="exampleFormControlTextarea1" class="form-label">Amount</label>
+                <i class="fas fa-dollar-sign"></i>
+                <input class="form-control" type="text" placeholder="Amount" aria-label="input example">
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-sm-6">
+                <label for="exampleFormControlTextarea1" class="form-label">First Name</label>
+                <input class="form-control" type="text" aria-label="input example">
+            </div>
+            <div class="col-sm-6">
+                <label for="exampleFormControlTextarea1" class="form-label">Last Name</label>
+                <input class="form-control" type="text" aria-label="input example">
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-sm-6">
+                <label for="exampleFormControlTextarea1" class="form-label">City</label>
+                <input class="form-control" type="text" aria-label="input example">
+            </div>
+            <div class="col-sm-3">
+                <label for="exampleFormControlTextarea1" class="form-label">State</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select a state</option>
+                    <option value="1">Alajuela</option>
+                    <option value="2">Heredia</option>
+                    <option value="3">Cartago</option>
+                    <option value="4">San José</option>
+                    <option value="5">Guanacaste</option>
+                    <option value="6">Puntarenas</option>
+                    <option value="7">Limón</option>
+                  </select>
+            </div>
+            <div class="col-sm-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Postal Code</label>
+                <input class="form-control" type="text" aria-label="input example">
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-sm-6">
+                We accept:
+                <div class="creditCard d-flex p-2 mt-3 ">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fab fa-cc-visa fa-sm"></i>                    
+                        </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 15px;">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <i class="fab fa-cc-amex fa-sm"></i>                        
+                        </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 15px;">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        <i class="fas fa-credit-card fa-sm"></i>
+                        </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 15px;">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        <i class="fas fa-credit-card fa-sm"></i>
+                        </label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <p class="blockquote font-small">Add any notes here.</p>
+            </div>
+        </div>
+      
+        <div class="row firstRowBg p-2">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-secondary botones">Cancel</button>
+                <button type="button " class="btn btn-primary botones">Send</button>
+            </div>
+        </div>
+       
+    </div>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+</body>
+
+</html>
